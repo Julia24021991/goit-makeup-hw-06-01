@@ -145,59 +145,6 @@ nav .link-logo {
     transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button-text:hover,
-.hero-button-text:focus {
-    background-color: #404bbf;
-    transition-duration: 250ms;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-/* Section 2 (Features)*/
-
-.feature {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    padding: 120px 0;
-}
-
-.list-feature {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.list-item-feature {
-    width: calc((100% - 3*24px) / 4);
-}
-
-.list-item-title-feature {
-    color: var(--list-item-title-feature);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
-
-.feature-list-discription {
-    color: var(--slate, #434455);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.list-item-feature-image {
-    border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-}
 
 /* Section 3 (Projects) */
 

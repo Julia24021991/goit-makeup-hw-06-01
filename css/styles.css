@@ -214,3 +214,97 @@ screen and (min-resolution: 2dppx) {
             url(../images/hero/office-people-desktop@2x.jpg)
     }
 }
+
+/* Section 2 (Features)*/
+.feature {
+    padding: 96px 0;
+    margin: 0 auto;
+}
+
+.list-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+
+
+}
+
+.list-item-feature {
+    height: calc((100% - 3*72px) / 4);
+    width: 396px;
+}
+
+.list-item-title-feature {
+    color: var(--list-item-title-feature);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.feature-list-discription {
+    color: var(--list-address);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.list-item-feature-image {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .list-feature {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .list-item-feature {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .list-item-title-feature {
+        text-align: start;
+
+    }
+
+    .feature-list-discription {
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .feature {
+        padding: 120px 0;
+    }
+
+    .list-item-feature {
+        width: calc((100% - 3*24px) / 4);
+    }
+
+    .list-item-title-feature {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .list-item-feature-image {
+        border-radius: 4px;
+        background: var(--cloud);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+    }
+
+}
+/* Section 3 (Projects) */
