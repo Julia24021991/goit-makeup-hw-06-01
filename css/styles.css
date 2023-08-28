@@ -1029,7 +1029,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .mobile-link-tel {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.12;
     letter-spacing: 0.02em;
@@ -1049,12 +1049,12 @@ screen and (min-resolution: 2dppx) {
 
 .mobile-social-list-icons {
     display: flex;
-    gap: 50px;
+    gap: 24px;
 
 }
 
 .footer-list-icons-item {
-    width: calc(100% - 3*50px / 4)
+    width: calc(100% - 3*24px / 4)
 }
 
 
