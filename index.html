@@ -23,14 +23,14 @@
         <div class="container header-container">
             <nav class="nav">
                 <a class="link link-logo" href="./index.html">Web<span class="logo-text">Studio</span></a>
-                <ul class="list">
-                    <li class="list-item">
+                <ul class="list nav-list">
+                    <li class="nav-list-item">
                         <a class="link nav-list-item current" href="./index.html">Studio</a>
                     </li>
-                    <li class="list-item">
+                    <li class="nav-list-item">
                         <a class="link nav-list-item" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="list-item">
+                    <li class="nav-list-item">
                         <a class="link nav-list-item" href="">Contacts</a>
                     </li>
                 </ul>
@@ -45,7 +45,14 @@
                     </li>
                 </ul>
             </address>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
+
 
     </header>
 
@@ -118,26 +125,32 @@
                 <h2 class="projects-title">What are we doing</h2>
                 <ul class="list">
                     <li class="project-list-item">
-                        <img src="./images/what-are-we-doing/box1.jpg" alt="box1" width="360" class="projects-img">
+                        <img srcset="./images/what-are-we-doing/box1.jpg 1x, ./images/what-are-we-doing/box1@2x.jpg 2x"
+                            src="./images/what-are-we-doing/box1.jpg" alt="box1" width="360" class="projects-img"
+                            loading="lazy">
                     </li>
                     <li class="project-list-item">
-                        <img src="./images/what-are-we-doing/box2.jpg" alt="box2" width="360" class="projects-img">
+                        <img srcset="./images/what-are-we-doing/box2.jpg 1x, ./images/what-are-we-doing/box2@2x.jpg 2x"
+                            src="./images/what-are-we-doing/box2.jpg" alt="box2" width="360" class="projects-img"
+                            loading="lazy">
                     </li>
                     <li class="project-list-item">
-                        <img src="./images/what-are-we-doing/box3.jpg" alt="box3" width="360" class="projects-img">
+                        <img srcset="./images/what-are-we-doing/box3.jpg 1x, ./images/what-are-we-doing/box3@2x.jpg 2x"
+                            src="./images/what-are-we-doing/box3.jpg" alt="box3" width="360" class="projects-img"
+                            loading="lazy">
                     </li>
                 </ul>
             </div>
         </section>
         <!-- Section 4 (Team) -->
         <section class="team">
-            <div class="container">
+            <div class="container team-container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="list ul-team-list">
                     <li class="team-list">
                         <img class="team-list-img"
                             srcset="./images/our-team/team-card1.jpg 1x, ./images/our-team/team-card1@2x.jpg 2x"
-                            src="./images/our-team/team-card1.jpg" alt="mark" width="264">
+                            src="./images/our-team/team-card1.jpg" alt="mark" width="264" loading="lazy">
                         <div class="team-card-description">
                             <h3 class="team-list-item">Mark Guerrero</h3>
                             <p class="team-list-description">Product Designer</p>
@@ -178,7 +191,7 @@
                     <li class="team-list">
                         <img class="team-list-img"
                             srcset="./images/our-team/team-card2.jpg 1x, ./images/our-team/team-card2@2x.jpg 2x"
-                            src="./images/our-team/team-card2.jpg" alt="tom" width="264">
+                            src="./images/our-team/team-card2.jpg" alt="tom" width="264" loading="lazy">
                         <div class="team-card-description">
                             <h3 class="team-list-item">Tom Ford</h3>
                             <p class="team-list-description">Frontend Developer</p>
@@ -219,7 +232,7 @@
                     <li class="team-list">
                         <img class="team-list-img"
                             srcset="./images/our-team/team-card3.jpg 1x, ./images/our-team/team-card3@2x.jpg 2x"
-                            src="./images/our-team/team-card3.jpg" alt="camila" width="264">
+                            src="./images/our-team/team-card3.jpg" alt="camila" width="264" loading="lazy">
                         <div class="team-card-description">
                             <h3 class="team-list-item">Camila Garcia</h3>
                             <p class="team-list-description">Marketing</p>
@@ -260,7 +273,7 @@
                     <li class="team-list">
                         <img class="team-list-img"
                             srcset="./images/our-team/team-card4.jpg 1x, ./images/our-team/team-card4@2x.jpg 2x"
-                            src="./images/our-team/team-card4.jpg" alt="daniel" width="264">
+                            src="./images/our-team/team-card4.jpg" alt="daniel" width="264" loading="lazy">
                         <div class="team-card-description">
                             <h3 class="team-list-item">Daniel Wilson</h3>
                             <p class="team-list-description">UI Designer</p>
@@ -303,7 +316,7 @@
         </section>
         <!-- Section 5 (Custumers) -->
         <section class="custumers">
-            <div class="container">
+            <div class="container custumer-container">
                 <h2 class="custumers-title">Customers</h2>
                 <ul class="list custumers-list">
                     <li class="custumers-list-item">
@@ -354,8 +367,8 @@
         </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
-        <div class="container footer-all">
+    <footer class="footer">
+        <div class="container footer-all footer-container">
             <div class="footer-logo">
                 <a class="footer-link" href="./index.html">Web<span class="fotter-logo-text">Studio</span></a>
                 <p class="footer-description">Increase the flow of customers and sales for your business with digital
@@ -413,11 +426,11 @@
             </div>
         </div>
 
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="close-btn-icon" width="8" height="8">
@@ -481,9 +494,74 @@
             </form>
         </div>
 
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class=" menu-toggle-btn-close js-close-menu">
+            <svg class="menu-toggle-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
 
+        <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+        </ul>
+
+        <ul class="list mobile-tel-list">
+            <li class="mobile-tel-list-item">
+                <a class="mobile-link-tel link" href="tel:110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-address-list-item">
+                <a class="mobile-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-social-list-icons">
+            <li class="footer-list-icons-item">
+                <a class="footer-list-icons-link" href="https://www.instagram.com" target="_blank">
+                    <svg class="footer-list-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-list-icons-item">
+                <a class="footer-list-icons-link" href="https://www.twitter.com/" target="_blank">
+                    <svg class="footer-list-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-list-icons-item">
+                <a class="footer-list-icons-link" href="https://www.facebook.com/" target="_blank">
+                    <svg class="footer-list-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook">
+
+                        </use>
+                    </svg></a>
+            </li>
+            <li class="footer-list-icons-item">
+                <a class="footer-list-icons-link" href="https://www.linkedin.com/" target="_blank">
+                    <svg class="footer-list-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin">
+                        </use>
+                    </svg></a>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
